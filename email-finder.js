@@ -1,4 +1,4 @@
-var kickbox = require('kickbox').client("").kickbox(),
+var kickbox = require('kickbox').client("YOUR_API_KEY_HERE").kickbox(),
 	dotenv  = require('dotenv'),
 	prompt  = require('prompt'),
 	colors  = require('colors/safe');
@@ -42,12 +42,15 @@ prompt.get(schema, function (err, result) {
 
 	var first  = result.name,
 		last   = result.last,
-		domain = result.domain;
+		domain = "@" + result.domain;
 
-	var parseCases = 	[	first+"."+last+"@"+domain, 
-							first+"."+last.slice(0,1)+"@"+domain,
-							first+last.slice(0,3)+"@"+domain,
-							first.slice(0,1)+last+"@"+domain
+	var parseCases = 	[	
+							first+domain,
+							first+"."+last+domain, 
+							first+"."+last.slice(0,1)+domain,
+							first.slice(0,1)+last+domain,
+							first+last.slice(0,1)+domain,
+							first+last.slice(0,3)+domain
 						];
 
 	for (var i = 0; i < parseCases.length; i++) {
