@@ -4,9 +4,14 @@
   "description": "",
   "main": "email-finder.js",
   "dependencies": {
+    "body-parser": "^1.15.0",
     "colors": "^1.1.2",
     "dotenv": "^2.0.0",
+    "email-verify": "0.0.18",
+    "express": "^4.13.4",
     "kickbox": "^2.0.0",
+    "morgan": "^1.7.0",
+    "path": "^0.12.7",
     "prompt": "^1.0.0"
   },
   "devDependencies": {},
