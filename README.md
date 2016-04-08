@@ -16,5 +16,5 @@ var kickbox = require('kickbox').client("YOUR_API_KEY_HERE").kickbox()
 
 then finally run the script with 
 `
-node email-finder.js
+nodemon email-finder.js
 `
