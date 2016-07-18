@@ -1,4 +1,4 @@
-var kickbox = require('kickbox').client("YOUR_API_KEY_HERE").kickbox(),
+var kickbox = require('kickbox').client("").kickbox(),
 	dotenv  = require('dotenv'),
 	prompt  = require('prompt'),
 	colors  = require('colors/safe');
