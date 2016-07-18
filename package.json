@@ -1,18 +1,17 @@
 {
-  "name": "email-finder",
+  "name": "mailboxlayer",
   "version": "1.0.0",
   "description": "",
-  "main": "email-finder.js",
+  "main": "main.js",
   "dependencies": {
+    "axios": "^0.13.0",
     "colors": "^1.1.2",
-    "dotenv": "^2.0.0",
-    "kickbox": "^2.0.0",
+    "jquery": "^3.1.0",
     "prompt": "^1.0.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC"
