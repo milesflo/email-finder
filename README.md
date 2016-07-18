@@ -14,7 +14,8 @@ then, go to [Kickbox.io](http://docs.kickbox.io/docs/using-the-api) to recieve y
 var kickbox = require('kickbox').client("YOUR_API_KEY_HERE").kickbox()
 ```
 
-then finally run the script with 
+then finally run the script with
+
 `
-node email-finder.js
+nodemon email-finder.js
 `
