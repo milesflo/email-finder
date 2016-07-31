@@ -26,7 +26,7 @@ properties: {
     hidden: true,
   },
   domain: {
-    pattern: /^[a-z.\s\-]+$/,
+    pattern: /^[a-z0-9.\s\-]+$/,
     description: 'Target host domain',
     required: true,
     type: 'string',
